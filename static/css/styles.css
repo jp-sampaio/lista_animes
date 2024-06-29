@@ -1,0 +1,96 @@
+/* Definições de estilo geral */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #E5E7EB; /* cor de fundo mais escura */
+    color: #1F2937; /* cor do texto mais escura */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #D97706; /* cor laranja mais escura */
+    color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9CA3AF; /* cor da borda mais escura */
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    background-color: #D97706; /* cor laranja mais escura */
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #B45309; /* cor laranja ainda mais escura no hover */
+}
+
+/* Lista de Animes */
+ul.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-group li {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #9CA3AF; /* cor da borda mais escura */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.list-group li strong {
+    font-size: 1.2em;
+}
+
+ul.list-group li small {
+    color: #6B7280; /* cor do texto secundário mais escura */
+}
+
+ul.list-group li a {
+    color: #D97706; /* cor laranja mais escura */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.list-group li a:hover {
+    color: #B45309; /* cor laranja ainda mais escura no hover */
+}

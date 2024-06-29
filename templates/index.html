@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Animes Preferidos</title>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meus Animes Preferidos</h1>
+    </header>
+    <div class="container">
+        <form method="POST" action="/add">
+            <input type="text" name="title" placeholder="Adicionar novo anime" required>
+            <input type="text" name="genre" placeholder="Gênero do anime" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul class="list-group">
+            {% for anime in animes %}
+                <li>
+                    <div>
+                        <strong>{{ anime.title }}</strong>
+                        <small>({{ anime.genre }})</small>
+                    </div>
+                    <a href="/delete/{{ anime.id }}">Remover</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
